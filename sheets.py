@@ -32,7 +32,7 @@ j = 2 #column
 
 while(cell!=None):
     cell = sheet.acell(position).value 
-    print("Cell not yet empty!!!\n")
+    print("Cell not yet empty!\n")
     time.sleep(5)
 
 sheet.update_acell(position,text)
