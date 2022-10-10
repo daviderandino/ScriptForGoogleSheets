@@ -37,4 +37,3 @@ while(cell!=None):
 
 sheet.update_acell(position,text)
 print("Cell updated succesfully")
-#print(text + " Ore",sheet.cell(i,j-1).value)
