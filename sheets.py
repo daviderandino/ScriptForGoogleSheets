@@ -23,10 +23,10 @@ def check_empty_sheet():
     return True
 
 text = "Text"
-
-cell = sheet.acell('B16').value 
-
 position = "B16"
+
+cell = sheet.acell(position).value 
+
 i = 16 #row
 j = 2 #column
 
