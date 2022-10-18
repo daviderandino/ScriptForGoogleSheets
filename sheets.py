@@ -5,6 +5,7 @@ import time
 from traceback import print_tb
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
+import datetime
 
 scope = [
 'https://www.googleapis.com/auth/spreadsheets',
@@ -32,7 +33,8 @@ j = 2 #column
 
 while(cell!=None):
     cell = sheet.acell(position).value 
-    print("Cell not yet empty!\n")
+    e = datetime.datetime.now()
+    print("Cell not yet empty! %s:%s:%s"% (e.hour, e.minute, e.second))
     time.sleep(5)
 
 sheet.update_acell(position,text)
